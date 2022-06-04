@@ -1,0 +1,62 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.Part2--cont {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 14px;
+    margin: 0 3vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* color: #fff; */
+}
+.Part2--input {
+    margin-top: 20px;
+    width: 60vw;
+    height: 2.4em;
+    margin: 3em 0;
+    font-size: 1.2em;
+    padding-left: 15px;
+}
+option {
+    background-color: #fff;
+}
+/* option:hover{
+    background-color: #444;
+} */
+.SelectValue {
+    width: 20vw;
+    height: 3em;
+    border-radius: 30px;
+    border: 1px solid #888;
+    background-color: #fff;
+    margin-top: 3px;
+}
+.filter1, .filter2 {
+    display: flex;
+    flex-direction: column;
+    width: 40vw;
+}
+.Part2--filters {
+    display: flex;
+    padding-left: 20vw;
+}
+
+@media only screen and (max-width:700px) {
+    .Part2--filters {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-left: 0;
+    }
+    .SelectValue {
+        width: 60vw;
+    }
+    .filter1, .filter2 {
+        display: flex;
+        flex-direction: column;
+        width: 60vw;
+    }
+}
