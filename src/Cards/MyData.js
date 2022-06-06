@@ -10,18 +10,19 @@ export default class MyData extends Component {
   };
   componentDidMount() {
     GetPlaces().then((Data) => {
+      console.log(Data);
       this.setState({
         mydata: Data,
         isLoaded: true
       });
+      // .catch((err) => console.log(err));
       console.log(this.state.mydata);
     });
   }
-
   render() {
     var { mydata, isLoaded } = this.state;
     // console.log(mydata);
-    if (isLoaded) {
+    if (!isLoaded) {
       return (
         <div className="card-cont">
           <div className="card1">
@@ -51,6 +52,7 @@ export default class MyData extends Component {
         </div>
       );
     } else {
+      // console.log(mydata);
       return (
         <div className="card-cont">
           <div className="card1">
@@ -60,7 +62,9 @@ export default class MyData extends Component {
               alt=""
             />
             <div className="card-txt">
-              <p className="location">{mydata.data[0].result_object.location_string}</p>
+              <p className="location">
+                {mydata.data[0].result_object.location_string}
+              </p>
               <h3>{mydata.data[0].result_object.name}</h3>
             </div>
           </div>
@@ -71,7 +75,9 @@ export default class MyData extends Component {
               alt=""
             />
             <div className="card-txt">
-              <p className="location">{mydata.data[1].result_object.location_string}</p>
+              <p className="location">
+                {mydata.data[1].result_object.location_string}
+              </p>
               <h3>{mydata.data[1].result_object.name}</h3>
             </div>
           </div>
@@ -82,7 +88,9 @@ export default class MyData extends Component {
               alt=""
             />
             <div className="card-txt">
-              <p className="location">{mydata.data[2].result_object.location_string}</p>
+              <p className="location">
+                {mydata.data[2].result_object.location_string}
+              </p>
               <h3>{mydata.data[2].result_object.name}</h3>
             </div>
           </div>
@@ -93,7 +101,9 @@ export default class MyData extends Component {
               alt=""
             />
             <div className="card-txt">
-              <p className="location">{mydata.data[3].result_object.location_string}</p>
+              <p className="location">
+                {mydata.data[3].result_object.location_string}
+              </p>
               <h3>{mydata.data[3].result_object.name}</h3>
             </div>
           </div>
@@ -104,7 +114,9 @@ export default class MyData extends Component {
               alt=""
             />
             <div className="card-txt">
-              <p className="location">{mydata.data[4].result_object.location_string}</p>
+              <p className="location">
+                {mydata.data[4].result_object.location_string}
+              </p>
               <h3>{mydata.data[4].result_object.name}</h3>
             </div>
           </div>
@@ -115,7 +127,9 @@ export default class MyData extends Component {
               alt=""
             />
             <div className="card-txt">
-              <p className="location">{mydata.data[5].result_object.location_string}</p>
+              <p className="location">
+                {mydata.data[5].result_object.location_string}
+              </p>
               <h3>{mydata.data[5].result_object.name}</h3>
             </div>
           </div>

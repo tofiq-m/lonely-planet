@@ -70,8 +70,8 @@ li:hover {
         width: 100vw;
         display: grid;
         /* background-color: red; */
-        grid-template-columns: repeat(2, minmax(240px, 1fr));
-        grid-template-columns: repeat(2, minmax(400px, 340px));
+        grid-template-columns: repeat(3, minmax(400px, 1fr));
+        grid-template-columns: repeat(3, minmax(400px, 400px));
         row-gap: 40px;
         column-gap: 40px;
         padding-left: 40px;

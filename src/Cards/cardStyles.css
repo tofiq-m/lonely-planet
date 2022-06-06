@@ -1,7 +1,9 @@
 .card-cont {
+    display: flex;
+    justify-content: center;
     display: grid;
-    grid-template-columns: repeat(12, minmax(240px, 1fr));
-    grid-template-columns: repeat(auto-fill, minmax(400px, 340px));
+    grid-template-columns: repeat(3, minmax(400px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(400px, 400px));
     gap: 60px;
     margin: 40px 0;
   }
@@ -13,18 +15,19 @@
     align-items: center;
     justify-content: center;
   }
-  
   .card-img {
     padding-top: 10px;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
     width: 94%;
-    height: 94%;
+    height: 400px;
   }
   .card-txt {
     display: flex;
     width: 94%;
     justify-content: space-between;
+    align-items: center;
+    padding: 10px 5px;
   }
   .location {
     font-size: 16px;

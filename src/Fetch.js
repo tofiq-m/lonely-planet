@@ -3,7 +3,7 @@ export function GetPlaces() {
 	  method: "GET",
 	  headers: {
 		"X-RapidAPI-Host": "travel-advisor.p.rapidapi.com",
-		"X-RapidAPI-Key": ""
+		"X-RapidAPI-Key": "2fddcac68bmsh10f58f071b54781p1cfcf4jsna888d8f06f1b"
 	  }
 	};
 	return fetch(
@@ -13,4 +13,4 @@ export function GetPlaces() {
 	  .then((response) => response.json())
 	  .catch((err) => console.error(err));
   }
-  // 7c184f1ba1msh2a2ffd2424ff6d6p18e5adjsn7f2098f2ed0e
+  // 2fddcac68bmsh10f58f071b54781p1cfcf4jsna888d8f06f1b
